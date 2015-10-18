@@ -1,5 +1,9 @@
-#!/bin/bash
+#!/bin/bash -p
+
+# Security settings
 set -e
+set -o pipefail
+set -u
 
 CA_CERT="StartSSL-CA"
 INT_CERT="StartSSL-Intermediate"
