@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -p
 # ----------------------------------------------------------------------------
 # Licensed to the Apache Software Foundation (ASF) under one
 # or more contributor license agreements.  See the NOTICE file
@@ -20,6 +20,11 @@
 #   Copyright (c) 2001-2002 The Apache Software Foundation.  All rights
 #   reserved.
 # ----------------------------------------------------------------------------
+
+# Security settings
+set -e
+set -o pipefail
+set -u
 
 function sendToRepo()
 {
